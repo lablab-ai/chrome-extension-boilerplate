@@ -1,0 +1,9 @@
+button#ext-closing-button{
+    background-color:transparent !important;
+    border:none !important;
+    cursor:pointer !important;
+}
+
+svg#ext-closing-button-svg:hover{
+    fill: gray !important;
+}

@@ -1,0 +1,35 @@
+{
+  "name": "MY_EXTENSION",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "description": "MY_EXTENSION",
+  "icons": {
+    "16": "assets/images/icon16.png",
+    "32": "assets/images/icon32.png",
+    "48": "assets/images/icon48.png",
+    "64": "assets/images/icon64.png",
+    "128": "assets/images/icon128.png",
+    "256": "assets/images/icon256.png",
+    "512": "assets/images/icon512.png"
+  },
+  "permissions": [
+    "clipboardRead",
+    "clipboardWrite",
+    "activeTab",
+    "storage",
+    "scripting",
+    "contextMenus"
+  ],
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["scripts/modal.js","scripts/api.js"]
+    }
+  ]
+}
