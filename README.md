@@ -9,5 +9,5 @@ This boilerplate is for development purposes only, in production you need to use
 
 1. Clone this repository
 2. in chrome extensions page, enable developer mode
-3. Load unpacked file and select the folder where you cloned this repository
+3. Click Load unpacked file in the Chrome extension page and select the folder where you cloned this repository
 4. Turn on the extension
